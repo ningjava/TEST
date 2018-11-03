@@ -56,7 +56,7 @@ public class Teacher extends Person{
 	}
 	
 	public static void main(String[] args) {
-		Teacher t = new Teacher("老师A",20,35);
+		Teacher t = new Teacher("老师A",35,20);
 		System.out.println(t.getMessage());
 	}
 	
