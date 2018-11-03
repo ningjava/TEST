@@ -1,0 +1,17 @@
+Ctrl+S		//随时存盘
+Ctrl+Shift+F	//格式
+Ctrl+Shift+/	//加多行注释
+Ctrl+Shift+\	//取消多行注释
+
+课堂练习：
+
+1、构造如下三个类，
+	Person{name, age}
+	Student{id} 	     继承Person
+	Teacher{teachingage} 继承Person
+要求每个类定义至少两个构造方法，两个子类使用方法重写。再构造一个Test类。new不同实例对象，测试子类对父类的继承。
+
+2、修改或构造Animal及其Cat、Dog、Bird子类，构造Kid类，TestPet类。实现方法的动态绑定。
+
+3、构造相应的父类和子类，实现不同类型账户利息计算。
+   应用：抽象类，动态绑定
