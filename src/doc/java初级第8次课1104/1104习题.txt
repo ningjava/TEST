@@ -1,0 +1,8 @@
+11.4
+
+学习、练习内容：继承、重写、多态、抽象类、向上转型、动态绑定、向下转型、instanceof运算符、接口、toString()方法、equales方法
+1、对已设计的几组类练习并理解掌握继承、重写、封装、多态、抽象等内容。
+	Person类、Student类、Teacher类；
+	Animal类、Cat类、Dog类、Bird类；
+	Shape类等（教材例题用）
+2、定义接口Singer、Runner，定义Student类（implements Singer, Runner）、Teacher类(implements Singer )。接口及类结构自定义，含必要的方法和参数，给出Test类测试，理解接口的实现。
