@@ -29,4 +29,10 @@ public class Rectangle extends Shape {
 		return ",周长为"+ (width+length) * 2;
 	}
 
+	/**
+	 * 重写Object类里面的toString()方法
+	 */
+	public String toString() {
+		return "矩形长宽"+this.length+","+this.width;
+	}
 }

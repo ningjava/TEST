@@ -25,4 +25,27 @@ public class Circle extends Shape {
 	public String getPerimeter() {
 		return ",周长为"+ Math.PI * radius * 2;
 	}
+	
+	/**
+	 * 重写Object类里面的toString()方法
+	 */
+	public String toString() {
+		return "圆形半径"+this.radius;
+	}
+	
+	/**
+	 * 重写Object类里面的equals()方法
+	 */
+	public boolean equals(Object o) {
+		if(o instanceof Circle) {
+			Circle c = (Circle)o;//向下转型
+			if(c.radius==this.radius) {
+				return true;
+			}else {
+				return false;
+			}
+		}else {
+			return false;
+		}
+	}
 }

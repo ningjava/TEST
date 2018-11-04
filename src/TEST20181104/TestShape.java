@@ -5,6 +5,7 @@ import org.junit.Test;
 public class TestShape {
     @Test
 	public void test() {
+    	//5.4多态--------------
 		//向上转型 最终s1,s2都是Shape对象，如果Shape中getArea方法删掉，则此处业务无法调用到。
 		Shape s1 = new Circle("Circle1", "blue", "green", 2.2);
 		Shape s2 = new Rectangle("Rectangle1", "red", "gray", 8, 9);
@@ -13,8 +14,9 @@ public class TestShape {
 		System.out.println(s2.getArea());
 		
 		System.out.println();
-		//如果想调用到子类自身方法，就需要向下转型，讲父类的对象强转为子类对象后再调用子类方法
+		//如果想调用到子类自身方法，就需要向下转型，将父类的对象强转为子类对象后再调用子类方法
 		
+		//5.5抽象，向上/下转型--------------
 		Shape s[]=new Shape[2];//定义一个Shape对象数组
 		//存入两个Shape对象，分别为Circle2，Rectangle2
 		s[0]=new Circle("Circle2", "blue", "green", 2.2);
@@ -33,6 +35,10 @@ public class TestShape {
 				System.out.println(str+r.getPerimeter());
 			}
 		}
-		
+		//5.6Object类--------------
+		/*输出Object对象时，会自动调用.toString()方法将对象信息输出，其中前面是对象名（含包路径），@后面是该对象的哈希码*/
+		System.out.println(s1);
+		System.out.println(s2);
+		 
 	}
 }
