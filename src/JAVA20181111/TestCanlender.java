@@ -70,12 +70,13 @@ public class TestCanlender {
 			if(i<start) {
 				System.out.print("       ");
 			}else {
-				System.out.print(i);
-				if(c11.get(Calendar.DAY_OF_WEEK) == Calendar.SATURDAY) {
-					System.out.println();
+				for(int j=1;j<=days;j++) {
+					System.out.print(j);
+					if((j+start-1)%7==0) {
+						System.out.println();
+					}
 				}
 			}
-			
 		}
 	}
 }
