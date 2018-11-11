@@ -47,7 +47,7 @@ public class TestStringBuffer {
 		System.out.println("-------part6------");
 		sb = new StringBuffer("Test");
 		 sb. deleteCharAt(1);  //对象sb的值变为”Tst”，删掉索引1位置字符
-		 System.out.println(sb); 
+		 System.out.println(sb);
 		 System.out.println("-------part7------");
 		 sb = new StringBuffer("TestString");
 		 sb. delete (1,4);  //对象sb的值是”TString,注意：包含start，不包含end，删掉索引1至所以4（含1不含4）
